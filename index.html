@@ -1,61 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Política de Privacidade</title>
   <style>
-    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
-    h1, h2 { color: #333; }
-    p { margin-bottom: 10px; }
-    a { color: #0066cc; text-decoration: none; }
+    body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; color:#222; }
+    h1, h2 { color: #111; margin-top: 22px; }
+    .muted { color:#666; font-size: 0.95rem; }
+    ul { margin-left: 18px; }
+    code { background:#f3f3f3; padding:2px 4px; border-radius:4px; }
+    a { color: #0b57d0; text-decoration: none; }
     a:hover { text-decoration: underline; }
-    ul { margin-left: 20px; }
+    .box { background:#fafafa; border:1px solid #eee; border-radius:10px; padding:14px; }
   </style>
 </head>
 <body>
   <h1>Política de Privacidade</h1>
+  <p class="muted">Última atualização: 18/02/2026</p>
 
-  <p>Última atualização: 05/09/2025</p>
+  <div class="box">
+    <p><strong>Aplicativo:</strong> <em>Primedge</em> <!-- troque aqui se o nome do app for outro --></p>
+    <p><strong>Empresa:</strong> Primedge</p>
+    <p><strong>Responsável:</strong> Juliano da Silva Martins</p>
+    <p><strong>Contato:</strong> <a href="mailto:suporte@primedge.com.br">suporte@primedge.com.br</a> <!-- troque pelo e-mail real --></p>
+  </div>
 
-  <h2>1. Informações que coletamos</h2>
-  <p>Nosso aplicativo <strong>coletor vitória plásticos</strong> funciona como coletor de dados de máquinas industriais (Indústria 4.0). Coletamos apenas informações técnicas relacionadas às máquinas e equipamentos, tais como:</p>
+  <h2>1. Escopo</h2>
+  <p>
+    Esta Política de Privacidade descreve como o aplicativo <strong>Primedge</strong> (“Aplicativo”) trata dados durante o uso.
+    O Aplicativo é utilizado para <strong>coleta e visualização de dados industriais</strong> (ex.: produção, status de máquina,
+    sensores e indicadores), com foco em operações e rotinas de Indústria 4.0.
+  </p>
+
+  <h2>2. Dados que tratamos</h2>
+
+  <p><strong>2.1. Dados técnicos industriais (não pessoais)</strong></p>
   <ul>
-    <li>Dados de produção (quantidade de peças produzidas, status da máquina);</li>
-    <li>Consumo de energia e corrente elétrica;</li>
-    <li>Leitura de sensores (tensão, corrente, sinais digitais, contadores);</li>
-    <li>Dados de funcionamento para monitoramento e manutenção preventiva.</li>
+    <li>Dados de produção (quantidade, tempos, status de máquina, contadores);</li>
+    <li>Leituras de sensores (corrente, tensão, sinais digitais, etc.);</li>
+    <li>Eventos de operação, alarmes técnicos e dados para manutenção/diagnóstico.</li>
   </ul>
-  <p>Não coletamos dados pessoais identificáveis de operadores ou usuários do sistema.</p>
 
-  <h2>2. Uso das informações</h2>
-  <p>As informações coletadas são utilizadas exclusivamente para:</p>
+  <p><strong>2.2. Dados de conta (quando aplicável)</strong></p>
+  <p>
+    Se o ambiente exigir autenticação, o Aplicativo pode tratar dados como <strong>nome</strong>, <strong>e-mail corporativo</strong> e
+    <strong>perfil de acesso</strong> (ex.: vendedor, admin, customer service), exclusivamente para controle de acesso,
+    auditoria e operação do sistema.
+  </p>
+
+  <p><strong>2.3. Dados do dispositivo e logs</strong></p>
+  <p>
+    Para funcionamento e segurança, podem ser registrados dados técnicos como: modelo do dispositivo, versão do sistema,
+    identificadores técnicos de sessão, erros e logs de sincronização. Esses dados não são utilizados para publicidade.
+  </p>
+
+  <h2>3. Permissões do aplicativo</h2>
+  <p>O Aplicativo pode solicitar permissões do sistema operacional. Principais permissões e finalidades:</p>
   <ul>
-    <li>Monitoramento em tempo real do funcionamento das máquinas;</li>
-    <li>Otimização de processos industriais;</li>
-    <li>Geração de relatórios de produção e desempenho;</li>
-    <li>Manutenção preventiva e diagnósticos de falhas.</li>
+    <li>
+      <strong>Câmera (<code>android.permission.CAMERA</code>):</strong>
+      usada para leitura de QR Code/código de barras (ex.: identificação de máquinas, produtos, ordens ou documentos).
+      O Aplicativo <strong>não grava vídeo</strong> nem tira fotos automaticamente, salvo se você iniciar uma captura.
+    </li>
+    <li><strong>Internet:</strong> para sincronização com servidor e carregamento de dados autorizados.</li>
+    <li><strong>Arquivos/Armazenamento (quando aplicável):</strong> para salvar/abrir PDFs e relatórios gerados pelo Aplicativo.</li>
   </ul>
 
-  <h2>3. Compartilhamento de informações</h2>
-  <p>Os dados coletados não são compartilhados com terceiros, exceto quando exigido por lei ou regulamentação. Todas as informações permanecem sob controle do cliente/empresa proprietária das máquinas.</p>
+  <h2>4. Como usamos os dados</h2>
+  <ul>
+    <li>Monitoramento operacional e indicadores (ex.: performance, disponibilidade, qualidade);</li>
+    <li>Geração de relatórios e registros técnicos (ex.: PDFs de checklist, RFQ, visitas técnicas);</li>
+    <li>Sincronização com backend autorizado pela empresa/cliente;</li>
+    <li>Auditoria, segurança e prevenção de falhas.</li>
+  </ul>
 
-  <h2>4. Segurança</h2>
-  <p>Adotamos medidas de segurança adequadas para proteger os dados coletados contra acesso não autorizado, alteração ou destruição, incluindo criptografia na comunicação entre o coletor e o aplicativo, quando aplicável.</p>
+  <h2>5. Compartilhamento</h2>
+  <p>
+    Não vendemos dados e não compartilhamos informações com terceiros para fins de publicidade.
+    Os dados podem ser acessados apenas por:
+  </p>
+  <ul>
+    <li>Usuários autorizados pela empresa/cliente (ex.: equipe de manutenção, supervisão, customer service);</li>
+    <li>Provedores técnicos necessários para hospedagem/infraestrutura (ex.: servidor/VPS), sob confidencialidade;</li>
+    <li>Autoridades competentes, quando exigido por lei.</li>
+  </ul>
 
-  <h2>5. Armazenamento e retenção</h2>
-  <p>Os dados coletados são armazenados de forma segura e utilizados apenas pelo período necessário para análise e otimização dos processos industriais.</p>
+  <h2>6. Armazenamento, retenção e segurança</h2>
+  <p>
+    Os dados podem ser armazenados <strong>localmente no dispositivo</strong> (modo offline-first) e/ou em <strong>servidores configurados</strong>,
+    conforme o ambiente de uso. Adotamos medidas técnicas e organizacionais para reduzir riscos de acesso indevido,
+    incluindo autenticação, controle de acesso e criptografia em trânsito quando aplicável (HTTPS/TLS).
+  </p>
+  <p>
+    <strong>Retenção:</strong> mantemos os dados pelo tempo necessário para operação do sistema, auditoria e requisitos
+    contratuais/legais. A empresa/cliente pode definir políticas internas de retenção.
+  </p>
 
-  <h2>6. Seus direitos</h2>
-  <p>Como não coletamos dados pessoais de operadores, não há informações individuais associadas. Caso haja dados fornecidos voluntariamente (ex.: login ou cadastro), você pode solicitar exclusão ou correção desses dados.</p>
+  <h2>7. Seus direitos (LGPD)</h2>
+  <p>
+    Quando houver dados pessoais (ex.: login corporativo), você pode solicitar: confirmação do tratamento, acesso, correção,
+    anonimização, portabilidade (quando aplicável) e exclusão, respeitando obrigações legais e contratuais.
+  </p>
+  <p>
+    Solicitações podem ser feitas pelo e-mail:
+    <a href="mailto:suporte@primedge.com.br">suporte@primedge.com.br</a>
+    <!-- troque pelo e-mail real -->
+  </p>
 
-  <h2>7. Alterações nesta política</h2>
-  <p>Podemos atualizar esta política de privacidade ocasionalmente. A data da “Última atualização” no topo desta página indica a versão mais recente.</p>
+  <h2>8. Crianças e adolescentes</h2>
+  <p>Este Aplicativo não é direcionado a crianças e não foi projetado para coletar dados de menores de 13 anos.</p>
 
-  <h2>8. Contato</h2>
-  <p>Se você tiver dúvidas sobre esta política de privacidade ou sobre o uso de dados do seu sistema industrial, entre em contato conosco:</p>
-  <p>Email: <a href="mailto:seuemail@exemplo.com">seuemail@exemplo.com</a></p>
+  <h2>9. Transferência internacional</h2>
+  <p>
+    Dependendo da infraestrutura contratada (ex.: VPS/serviços em nuvem), dados podem ser processados em servidores localizados fora do Brasil.
+    Quando isso ocorrer, buscamos manter proteções adequadas conforme a LGPD.
+  </p>
 
-  <p>Obrigado por usar o <strong>[NOME DO APP]</strong>!</p>
+  <h2>10. Alterações nesta política</h2>
+  <p>
+    Podemos atualizar esta política periodicamente. A data no topo indica a versão mais recente.
+    Recomendamos revisar este documento sempre que houver atualização do Aplicativo.
+  </p>
+
+  <h2>11. Contato</h2>
+  <p>
+    Dúvidas sobre privacidade e dados:<br />
+    <strong>Primedge</strong><br />
+    <strong>Responsável:</strong> Juliano da Silva Martins<br />
+    E-mail: <a href="mailto:suporte@primedge.com.br">suporte@primedge.com.br</a>
+    <!-- troque pelo e-mail real -->
+  </p>
+
+  <p class="muted">Obrigado por usar o <strong>Primedge</strong>.</p>
 </body>
 </html>
